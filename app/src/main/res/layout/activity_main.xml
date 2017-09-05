@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mbobiosio.imageupload.volley.MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/uploadimage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/avatar"
+        app:civ_border_color="?colorAccent"
+        app:civ_border_width="2dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/pick_Img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uploadimage"
+        android:layout_gravity="bottom|end"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_party_mode_black_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/up_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uploadimage"
+        android:layout_gravity="bottom|end"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/pick_Img"
+        android:layout_toRightOf="@id/pick_Img"
+        android:src="@drawable/ic_done_black_24dp"/>
+    <TextView
+        android:id="@+id/imagename"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/up_img"
+        android:layout_marginTop="20dp"
+        android:text="user"/>
+
+</RelativeLayout>
