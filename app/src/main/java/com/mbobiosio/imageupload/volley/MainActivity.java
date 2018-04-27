@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
 
         Context context ;
         ProgressDialog progressDialog ;
-        String upload_image_url = "http://dttslimited.com/flexfare/upload.php" ;
+        String upload_image_url = "http://yoururl.com/upload.php" ;
 
         ApiTaskUploadImage(Context context){
             this.context = context ;
